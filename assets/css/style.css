@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-brand {
 	color: #ff6600; /*#1abc9c;*/
     transition: color 0.2s ease-out,
-              color 0.2s ease-out;
+                color 0.2s ease-out;
 }
 
 .navbar-default {
@@ -97,17 +97,125 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: transparent;
 	border-bottom: 2px solid #ff6600; /*#1abc9c*/
     transition: color 0.2s ease-in,
-              color 0.2s ease-in;
+                color 0.2s ease-in;
 }
 
 .navbar-default a:hover {
     color:#FFFFFF !important;
     transition: color 0.2s ease-in,
-              color 0.2s ease-in;
+                color 0.2s ease-in;
 }
 
 .navbar-default .navbar-nav > li > a {
 	color: #ff6600; /*#1abc9c;*/
+}
+
+/* ======================= Button Styles ====================== */
+.button-basic,
+.button-basic:visited {
+    display:inline-block;
+    width:200px;
+    padding:8px;
+    color:#FFF;
+    border:1px solid #FFF;
+    text-align: center;
+    outline:none;
+    text-decoration:none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
+}
+
+.button-thick,
+.button-thick:visited {
+    display:inline-block;
+    width:200px;
+    font-weight:bold;
+    padding:8px;
+    color:#FFF;
+    border:3px solid #FFF;
+    text-align: center;
+    outline:none;
+    text-decoration:none;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.button-border,
+.button-border:visited {
+    display:inline-block;
+    width:200px;
+    padding:8px;
+    color:#FFF;
+    border:2px solid #FFF;
+    text-align: center;
+    outline:none;
+    text-decoration:none;
+    transition: border-color 0.3s ease-out,
+                color 0.3s ease-out;
+}
+
+.button-border-black,
+.button-border-black:visited {
+    display:inline-block;
+    width:200px;
+    padding:8px;
+    color:#333;
+    border:2px solid #333;
+    text-align: center;
+    outline:none;
+    text-decoration:none;
+    transition: border-color 0.3s ease-out,
+                color 0.3s ease-out;
+}
+
+.button-size,
+.button-size:visited {
+    display:inline-block;
+    width:200px;
+    padding:8px;
+    color:#FFF;
+    border:2px solid #FFF;
+    text-align: center;
+    outline:none;
+    text-decoration:none;
+    transition: width 0.3s ease-out,
+                height 0.3s ease-out,
+                line-height 0.3s ease-out;
+}
+
+.button-basic:hover,
+.button-basic:active,
+.button-thick:hover,
+.button-thick:active {
+    background-color: #FFF;
+    color:#000;
+    text-decoration:none;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+}
+.button-border:hover,
+.button-border:active {
+    color:#FF6600;
+    border-color:#FF6600;
+    text-decoration: none;
+    transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+.button-border-black:hover,
+.button-border-black:active {
+    color:#FF6600;
+    border-color:#FF6600;
+    text-decoration: none;
+    transition: border-color 0.4s ease-in,
+                color 0.4s ease-in;
+}
+.button-size:hover,
+.button-size:active {
+    width: 220px;
+    padding:10px 12px;
+    text-decoration: none;
+    transition: width 0.1s ease-in,
+                padding 0.1s ease-in
 }
 
 /* ==========================================================================
@@ -147,6 +255,10 @@ h1, h2, h3, h4, h5, h6 {
 #headerwrap h4 {
 	font-weight: 400;
 	color: #ffffff
+}
+
+.resume {
+    margin:30px 0 10px 0;
 }
 
 #social {
