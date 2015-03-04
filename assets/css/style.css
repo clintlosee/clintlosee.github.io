@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default a:hover {
-    color:#FFFFFF !important;
+    color:#888888 !important;
     transition: color 0.2s ease-in,
                 color 0.2s ease-in;
 }
@@ -507,6 +507,120 @@ h1, h2, h3, h4, h5, h6 {
     to { width: 80%; }
 }
 
+/* WordPress */
+#skill-wp {
+    width:60%;
+    animation: Animate-WP 4s;
+        -webkit-animation: Animate-WP 4s;
+        -moz-animation: Animate-WP 4s;
+        -o-animation: Animate-WP 4s;
+    height:45px;
+    position: absolute;
+    background-color: #85c440;
+}
+@keyframes Animate-WP {
+    a from { width: 10px; }
+    to { width: 60%; }
+}
+@-webkit-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-moz-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-o-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+
+/* Git/Version Control */
+#skill-vc {
+    width:75%;
+    animation: Animate-VC 2s;
+        -webkit-animation: Animate-VC 2s;
+        -moz-animation: Animate-VC 2s;
+        -o-animation: Animate-VC 2s;
+    height:45px;
+    position: absolute;
+    background-color: #db3a27;
+}
+@keyframes Animate-VC {
+    a from { width: 10px; }
+    to { width: 75%; }
+}
+@-webkit-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+@-moz-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+@-o-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+
+
+
+/* Responsivenes */
+#skill-res {
+    width:80%;
+    animation: Animate-RES 3s;
+        -webkit-animation: Animate-RES 3s;
+        -moz-animation: Animate-RES 3s;
+        -o-animation: Animate-RES 3s;
+    height:45px;
+    position: absolute;
+    background-color: #66CC99;
+}
+@keyframes Animate-RES {
+    a from { width: 10px; }
+    to { width: 80%; }
+}
+@-webkit-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+@-moz-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+@-o-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+
+/* Responsivenes */
+#skill-res {
+    width:80%;
+    animation: Animate-RES 3s;
+        -webkit-animation: Animate-RES 3s;
+        -moz-animation: Animate-RES 3s;
+        -o-animation: Animate-RES 3s;
+    height:45px;
+    position: absolute;
+    background-color: #66CC99;
+}
+@keyframes Animate-RES {
+    a from { width: 10px; }
+    to { width: 80%; }
+}
+@-webkit-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+@-moz-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+@-o-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 80%; }
+}
+
 
 
 
@@ -618,13 +732,56 @@ from { opacity:0; }
 to { opacity:1; }
 }
 
-@media only screen and (max-width: 40em) {
-     .responsive-percent {
-         margin-right: -45px !important;
-     }
- }
- @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-     .responsive-percent {
-         margin-right: -45px !important;
-     }
- }
+
+/* ============== Back to Top ====================== */
+.cl-top {
+    display:inline-block;
+    height:40px;
+    width:40px;
+    position:fixed;
+    bottom:40px;
+    right:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    /*replace image*/
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    background:rgba(255, 102, 0, 0.8) url(../img/top-arrow.svg) no-repeat center 50%;
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cl-top.cl-is-visible, .cl-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cl-top.cl-is-visible {
+    visibility:visible;
+    opacity:1;
+}
+.cl-top.cd-fade-out {
+    opacity:.5;
+}
+.no-touch .cl-top:hover {
+    background-color:#e86256;
+    opacity:1;
+}
+
+@media only screen and (min-width: 768px) {
+    .cl-top {
+        right:20px;
+        bottom:20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cl-top {
+        height:60px;
+        width:60px;
+        right:30px;
+        bottom:30px;
+    }
+}
