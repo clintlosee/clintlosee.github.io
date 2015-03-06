@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default a:hover {
-    color:#FFFFFF !important;
+    color:#888888 !important;
     transition: color 0.2s ease-in,
                 color 0.2s ease-in;
 }
@@ -257,6 +257,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff
 }
 
+#headerwrap span {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+
 .resume {
     margin:30px 0 10px 0;
 }
@@ -294,13 +299,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f2f2f2;
 	margin-left: 10px;
     transition: color 0.2s ease-out,
-              color 0.2s ease-out;
+                color 0.2s ease-out;
 }
 #footerwrap a:hover {
     color:#ff6600;
     text-decoration:none;
     transition: color 0.2s ease-out,
-              color 0.2s ease-out;
+                color 0.2s ease-out;
 }
 
 #workwrap {
@@ -359,14 +364,508 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-
-
-
 /* Gallery */
 .gallery {
 	margin-top: 30px;
+    opacity:1.0;
+    transition: opacity 0.3s ease-out,
+                color 0.3s ease-out;
 }
 
-.gallery img:hover {
-	opacity: 0.4;
+/* Gallery Title */
+.gallery h3 {
+    /*display:none;*/
+    opacity:0;
+    position:absolute;
+    bottom:40%;
+    left:40%;
+    font-size:2em;
+    transition: opacity 0.3s ease-out;
+}
+
+.gallery a:hover {
+	opacity: 0.3;
+    transition: opacity 0.3s ease-in,
+                color 0.3s ease-in;
+}
+
+/* Gallery Title Hover Display */
+.gallery:hover h3 {
+    /*display:block;*/
+    opacity:1.0;
+    transition: opacity 0.3s ease-in;
+}
+
+/* ========================== Skills Styles ====================== */
+.skillbar {
+	height: 45px;
+	position: relative;
+	background: rgba(108, 122, 137, 1);
+	margin: 20px 0;
+}
+.skill-area {
+	z-index: 1;
+	float: left;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-shadow: none;
+	color: #fff;
+}
+.percent-text {
+	z-index: 3;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: right;
+	text-shadow: none;
+	color: #fff;
+	font-size:1em;
+}
+
+/* HTML/CSS */
+#skill-html {
+    width:99%;
+    animation: Animate-HTML 4s;
+        -webkit-animation: Animate-HTML 4s;
+        -moz-animation: Animate-HTML 4s;
+        -o-animation: Animate-HTML 4s;
+    height:45px;
+    position: absolute;
+    background-color: #F9690E;
+}
+@keyframes Animate-HTML {
+    a from { width: 10px; }
+    to { width: 99%; }
+}
+@-webkit-keyframes Animate-HTML {
+    from { width: 10px; }
+    to { width: 99%; }
+}
+@-moz-keyframes Animate-HTML {
+    from { width: 10px; }
+    to { width: 99%; }
+}
+@-o-keyframes Animate-HTML {
+    from { width: 10px; }
+    to { width: 99%; }
+}
+
+/* JS-jQuery */
+#skill-js {
+    width:60%;
+    animation: Animate-JS 5s;
+        -webkit-animation: Animate-JS 5s;
+        -moz-animation: Animate-JS 5s;
+        -o-animation: Animate-JS 5s;
+    height:45px;
+    position: absolute;
+    background-color: #446CB3;
+}
+@keyframes Animate-JS {
+    a from { width: 10px; }
+    to { width: 60%; }
+}
+@-webkit-keyframes Animate-JS {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-moz-keyframes Animate-JS {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-o-keyframes Animate-JS {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+
+/* Responsivenes */
+#skill-res {
+    width:75%;
+    animation: Animate-RES 3s;
+        -webkit-animation: Animate-RES 3s;
+        -moz-animation: Animate-RES 3s;
+        -o-animation: Animate-RES 3s;
+    height:45px;
+    position: absolute;
+    background-color: #66CC99;
+}
+@keyframes Animate-RES {
+    a from { width: 10px; }
+    to { width: 75%; }
+}
+@-webkit-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+@-moz-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+@-o-keyframes Animate-RES {
+    from { width: 10px; }
+    to { width: 75%; }
+}
+
+/* WordPress */
+#skill-wp {
+    width:60%;
+    animation: Animate-WP 4.5s;
+        -webkit-animation: Animate-WP 4.5s;
+        -moz-animation: Animate-WP 4.5s;
+        -o-animation: Animate-WP 4.5s;
+    height:45px;
+    position: absolute;
+    background-color: #85c440;
+}
+@keyframes Animate-WP {
+    a from { width: 10px; }
+    to { width: 60%; }
+}
+@-webkit-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-moz-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+@-o-keyframes Animate-WP {
+    from { width: 10px; }
+    to { width: 60%; }
+}
+
+/* Git/Version Control */
+#skill-vc {
+    width:70%;
+    animation: Animate-VC 2s;
+        -webkit-animation: Animate-VC 2s;
+        -moz-animation: Animate-VC 2s;
+        -o-animation: Animate-VC 2s;
+    height:45px;
+    position: absolute;
+    background-color: #2796db;
+}
+@keyframes Animate-VC {
+    a from { width: 10px; }
+    to { width: 70%; }
+}
+@-webkit-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 70%; }
+}
+@-moz-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 70%; }
+}
+@-o-keyframes Animate-VC {
+    from { width: 10px; }
+    to { width: 70%; }
+}
+
+
+/* Angular */
+#skill-ng {
+    width:40%;
+    animation: Animate-NG 3.5s;
+        -webkit-animation: Animate-NG 3.5s;
+        -moz-animation: Animate-NG 3.5s;
+        -o-animation: Animate-NG 3.5s;
+    height:45px;
+    position: absolute;
+    background-color: #E50000;
+}
+@keyframes Animate-NG {
+    a from { width: 10px; }
+    to { width: 40%; }
+}
+@-webkit-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-moz-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-o-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+
+/* SEO */
+#skill-seo {
+    width:90%;
+    animation: Animate-SEO 1.5s;
+        -webkit-animation: Animate-SEO 1.5s;
+        -moz-animation: Animate-SEO 1.5s;
+        -o-animation: Animate-SEO 1.5s;
+    height:45px;
+    position: absolute;
+    background-color: #0be51c;
+}
+@keyframes Animate-SEO {
+    a from { width: 10px; }
+    to { width: 90%; }
+}
+@-webkit-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+@-moz-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+@-o-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+
+
+/* Photography */
+#skill-ph {
+    width:100%;
+    animation: Animate-PHOTO 1s;
+        -webkit-animation: Animate-PHOTO 1s;
+        -moz-animation: Animate-PHOTO 1s;
+        -o-animation: Animate-PHOTO 1s;
+    height:45px;
+    position: absolute;
+    background-color: #F0E70F;
+}
+@keyframes Animate-PHOTO {
+    a from { width: 10px; }
+    to { width: 100%; }
+}
+@-webkit-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-moz-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-o-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+
+
+/* Agile Development */
+#skill-agile {
+    width:40%;
+    animation: Animate-AGILE 2s;
+        -webkit-animation: Animate-AGILE 2s;
+        -moz-animation: Animate-AGILE 2s;
+        -o-animation: Animate-AGILE 2s;
+    height:45px;
+    position: absolute;
+    background-color: #db3a27;
+}
+@keyframes Animate-AGILE {
+    a from { width: 10px; }
+    to { width: 40%; }
+}
+@-webkit-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-moz-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-o-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+
+
+/* Digital Publishing */
+#skill-digpub {
+    width:50%;
+    animation: Animate-DIGPUB 5s;
+        -webkit-animation: Animate-DIGPUB 5s;
+        -moz-animation: Animate-DIGPUB 5s;
+        -o-animation: Animate-DIGPUB 5s;
+    height:45px;
+    position: absolute;
+    background-color: #66CC99;
+}
+@keyframes Animate-DIGPUB {
+    a from { width: 10px; }
+    to { width: 50%; }
+}
+@-webkit-keyframes Animate-DIGPUB {
+    from { width: 10px; }
+    to { width: 50%; }
+}
+@-moz-keyframes Animate-DIGPUB {
+    from { width: 10px; }
+    to { width: 50%; }
+}
+@-o-keyframes Animate-DIGPUB {
+    from { width: 10px; }
+    to { width: 50%; }
+}
+
+
+/* Learning */
+#skill-learn {
+    width:100%;
+    animation: Animate-LEARN 1s;
+        -webkit-animation: Animate-LEARN 1s;
+        -moz-animation: Animate-LEARN 1s;
+        -o-animation: Animate-LEARN 1s;
+    height:45px;
+    position: absolute;
+    background-color: #0076ff;
+}
+@keyframes Animate-LEARN {
+    a from { width: 10px; }
+    to { width: 100%; }
+}
+@-webkit-keyframes Animate-LEARN {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-moz-keyframes Animate-LEARN {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-o-keyframes Animate-LEARN {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+
+
+
+/* Animation Time - Text Fade in Time */
+.fadeIn-3s {
+    -webkit-animation-duration:3s;
+     -moz-animation-duration:3s;
+     -o-animation-duration:3s;
+     animation-duration:3s;
+}
+/* Animation Delay - Text Fade Time delayed */
+.fadeIn-Delay-3s {
+     -webkit-animation-delay:3s;
+     -moz-animation-delay:3s;
+     -o-animation-delay:3s;
+     animation-delay:3s;
+ }
+
+/* CSS3 fadeIn
+---------------------------------------------------- */
+.fadeIn {
+	/* CSS needed for animation
+	---------------------------------------------------- */
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	-o-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-3s {
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;
+}
+.fadeIn-5s {
+	-webkit-animation-duration:5s;
+	-moz-animation-duration:5s;
+	-o-animation-duration:5s;
+	animation-duration:5s;
+}
+/* Animation Delay - Time for image to be delayed
+---------------------------------------------------- */
+.fadeIn-Delay-3s {
+	-webkit-animation-delay:3s;
+	-moz-animation-delay:3s;
+	-o-animation-delay:3s;
+	animation-delay:3s;
+}
+.fadeIn-Delay-5s {
+	-webkit-animation-delay:5s;
+	-moz-animation-delay:5s;
+	-o-animation-delay:5s;
+	animation-delay:5s;
+}
+
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@-o-keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@keyframes fadeIn {
+from { opacity:0; }
+to { opacity:1; }
+}
+
+
+/* ============== Back to Top ====================== */
+.cl-top {
+    display:inline-block;
+    height:40px;
+    width:40px;
+    position:fixed;
+    bottom:40px;
+    right:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    /*replace image*/
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    background:rgba(255, 102, 0, 0.8) url(../img/top-arrow.svg) no-repeat center 50%;
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cl-top.cl-is-visible, .cl-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cl-top.cl-is-visible {
+    visibility:visible;
+    opacity:1;
+}
+.cl-top.cd-fade-out {
+    opacity:.5;
+}
+.no-touch .cl-top:hover {
+    background-color:#e86256;
+    opacity:1;
+}
+
+@media only screen and (min-width: 768px) {
+    .cl-top {
+        right:20px;
+        bottom:20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cl-top {
+        height:60px;
+        width:60px;
+        right:30px;
+        bottom:30px;
+    }
 }
