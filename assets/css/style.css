@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* JS-jQuery */
 #skill-js {
-    width:65%;
+    width:60%;
     animation: Animate-JS 5s;
         -webkit-animation: Animate-JS 5s;
         -moz-animation: Animate-JS 5s;
@@ -464,24 +464,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 @keyframes Animate-JS {
     a from { width: 10px; }
-    to { width: 65%; }
+    to { width: 60%; }
 }
 @-webkit-keyframes Animate-JS {
     from { width: 10px; }
-    to { width: 65%; }
+    to { width: 60%; }
 }
 @-moz-keyframes Animate-JS {
     from { width: 10px; }
-    to { width: 65%; }
+    to { width: 60%; }
 }
 @-o-keyframes Animate-JS {
     from { width: 10px; }
-    to { width: 65%; }
+    to { width: 60%; }
 }
 
 /* Responsivenes */
 #skill-res {
-    width:80%;
+    width:75%;
     animation: Animate-RES 3s;
         -webkit-animation: Animate-RES 3s;
         -moz-animation: Animate-RES 3s;
@@ -492,28 +492,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 @keyframes Animate-RES {
     a from { width: 10px; }
-    to { width: 80%; }
+    to { width: 75%; }
 }
 @-webkit-keyframes Animate-RES {
     from { width: 10px; }
-    to { width: 80%; }
+    to { width: 75%; }
 }
 @-moz-keyframes Animate-RES {
     from { width: 10px; }
-    to { width: 80%; }
+    to { width: 75%; }
 }
 @-o-keyframes Animate-RES {
     from { width: 10px; }
-    to { width: 80%; }
+    to { width: 75%; }
 }
 
 /* WordPress */
 #skill-wp {
     width:60%;
-    animation: Animate-WP 4s;
-        -webkit-animation: Animate-WP 4s;
-        -moz-animation: Animate-WP 4s;
-        -o-animation: Animate-WP 4s;
+    animation: Animate-WP 4.5s;
+        -webkit-animation: Animate-WP 4.5s;
+        -moz-animation: Animate-WP 4.5s;
+        -o-animation: Animate-WP 4.5s;
     height:45px;
     position: absolute;
     background-color: #85c440;
@@ -537,94 +537,178 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Git/Version Control */
 #skill-vc {
-    width:75%;
+    width:70%;
     animation: Animate-VC 2s;
         -webkit-animation: Animate-VC 2s;
         -moz-animation: Animate-VC 2s;
         -o-animation: Animate-VC 2s;
     height:45px;
     position: absolute;
-    background-color: #db3a27;
+    background-color: #2796db;
 }
 @keyframes Animate-VC {
     a from { width: 10px; }
-    to { width: 75%; }
+    to { width: 70%; }
 }
 @-webkit-keyframes Animate-VC {
     from { width: 10px; }
-    to { width: 75%; }
+    to { width: 70%; }
 }
 @-moz-keyframes Animate-VC {
     from { width: 10px; }
-    to { width: 75%; }
+    to { width: 70%; }
 }
 @-o-keyframes Animate-VC {
     from { width: 10px; }
-    to { width: 75%; }
+    to { width: 70%; }
 }
 
 
+/* Angular */
+#skill-ng {
+    width:40%;
+    animation: Animate-NG 3.5s;
+        -webkit-animation: Animate-NG 3.5s;
+        -moz-animation: Animate-NG 3.5s;
+        -o-animation: Animate-NG 3.5s;
+    height:45px;
+    position: absolute;
+    background-color: #E50000;
+}
+@keyframes Animate-NG {
+    a from { width: 10px; }
+    to { width: 40%; }
+}
+@-webkit-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-moz-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-o-keyframes Animate-NG {
+    from { width: 10px; }
+    to { width: 40%; }
+}
 
-/* Responsivenes */
-#skill-res {
-    width:80%;
-    animation: Animate-RES 3s;
-        -webkit-animation: Animate-RES 3s;
-        -moz-animation: Animate-RES 3s;
-        -o-animation: Animate-RES 3s;
+/* SEO */
+#skill-seo {
+    width:90%;
+    animation: Animate-SEO 1.5s;
+        -webkit-animation: Animate-SEO 1.5s;
+        -moz-animation: Animate-SEO 1.5s;
+        -o-animation: Animate-SEO 1.5s;
+    height:45px;
+    position: absolute;
+    background-color: #0be51c;
+}
+@keyframes Animate-SEO {
+    a from { width: 10px; }
+    to { width: 90%; }
+}
+@-webkit-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+@-moz-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+@-o-keyframes Animate-SEO {
+    from { width: 10px; }
+    to { width: 90%; }
+}
+
+
+/* Photography */
+#skill-ph {
+    width:100%;
+    animation: Animate-PHOTO 1s;
+        -webkit-animation: Animate-PHOTO 1s;
+        -moz-animation: Animate-PHOTO 1s;
+        -o-animation: Animate-PHOTO 1s;
+    height:45px;
+    position: absolute;
+    background-color: #F0E70F;
+}
+@keyframes Animate-PHOTO {
+    a from { width: 10px; }
+    to { width: 100%; }
+}
+@-webkit-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-moz-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+@-o-keyframes Animate-PHOTO {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+
+
+/* Agile Development */
+#skill-agile {
+    width:40%;
+    animation: Animate-AGILE 2s;
+        -webkit-animation: Animate-AGILE 2s;
+        -moz-animation: Animate-AGILE 2s;
+        -o-animation: Animate-AGILE 2s;
+    height:45px;
+    position: absolute;
+    background-color: #db3a27;
+}
+@keyframes Animate-AGILE {
+    a from { width: 10px; }
+    to { width: 40%; }
+}
+@-webkit-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-moz-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+@-o-keyframes Animate-AGILE {
+    from { width: 10px; }
+    to { width: 40%; }
+}
+
+
+/* Digital Publishing */
+#skill-digpub {
+    width:50%;
+    animation: Animate-DIGPUB 5s;
+        -webkit-animation: Animate-DIGPUB 5s;
+        -moz-animation: Animate-DIGPUB 5s;
+        -o-animation: Animate-DIGPUB 5s;
     height:45px;
     position: absolute;
     background-color: #66CC99;
 }
-@keyframes Animate-RES {
+@keyframes Animate-DIGPUB {
     a from { width: 10px; }
-    to { width: 80%; }
+    to { width: 50%; }
 }
-@-webkit-keyframes Animate-RES {
+@-webkit-keyframes Animate-DIGPUB {
     from { width: 10px; }
-    to { width: 80%; }
+    to { width: 50%; }
 }
-@-moz-keyframes Animate-RES {
+@-moz-keyframes Animate-DIGPUB {
     from { width: 10px; }
-    to { width: 80%; }
+    to { width: 50%; }
 }
-@-o-keyframes Animate-RES {
+@-o-keyframes Animate-DIGPUB {
     from { width: 10px; }
-    to { width: 80%; }
-}
-
-/* Responsivenes */
-#skill-res {
-    width:80%;
-    animation: Animate-RES 3s;
-        -webkit-animation: Animate-RES 3s;
-        -moz-animation: Animate-RES 3s;
-        -o-animation: Animate-RES 3s;
-    height:45px;
-    position: absolute;
-    background-color: #66CC99;
-}
-@keyframes Animate-RES {
-    a from { width: 10px; }
-    to { width: 80%; }
-}
-@-webkit-keyframes Animate-RES {
-    from { width: 10px; }
-    to { width: 80%; }
-}
-@-moz-keyframes Animate-RES {
-    from { width: 10px; }
-    to { width: 80%; }
-}
-@-o-keyframes Animate-RES {
-    from { width: 10px; }
-    to { width: 80%; }
+    to { width: 50%; }
 }
 
 
-
-
-/* Responsivenes */
+/* Learning */
 #skill-learn {
     width:100%;
     animation: Animate-LEARN 1s;
@@ -633,7 +717,7 @@ h1, h2, h3, h4, h5, h6 {
         -o-animation: Animate-LEARN 1s;
     height:45px;
     position: absolute;
-    background-color: #66CC99;
+    background-color: #0076ff;
 }
 @keyframes Animate-LEARN {
     a from { width: 10px; }
