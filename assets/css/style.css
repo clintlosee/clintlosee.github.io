@@ -3,9 +3,8 @@
  * URL: http://clintlosee.github.io
  *
  * Project Name: Portfolio
- * Version: 1.6
- * Date: 09-21-2015
- * URL:
+ * Version: 1.7
+ * Date: 12-17-2015
  */
 
 
@@ -18,14 +17,14 @@
 
 
 ::-moz-selection {
-    background: #1b45fa; /* #f2c2c9;*/
-    color: #efefef; /* #a4003a;*/
+    background: #ff6600; /* #f2c2c9;*/
+    color: #ffffff; /* #a4003a;*/
     text-shadow: none;
 }
 
 ::selection {
-    background: #1b45fa; /* #f2c2c9;*/
-    color: #efefef; /* #a4003a;*/
+    background: #ff6600; /* #f2c2c9;*/
+    color: #ffffff; /* #a4003a;*/
     text-shadow: none;
 }
 
@@ -68,6 +67,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: #4a4a4a;
+}
+
+a {
+    color: #FF6600;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+a:hover {
+    color: #1c09b2;
+    text-decoration: none;
 }
 
 .navbar-brand {

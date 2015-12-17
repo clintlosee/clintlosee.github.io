@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(function() {
     var offset = 300,
         offset_opacity = 1200,
         scroll_top_duration = 700,
@@ -19,4 +19,4 @@ jQuery(document).ready(function($){
             scrollTop: 0,
             }, scroll_top_duration);
     });
-})
+});
