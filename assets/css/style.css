@@ -241,7 +241,7 @@ a:hover {
     margin-top: -70px;
     padding-top: 250px;
     text-align: center;
-    background-attachment: relative;
+    background-attachment: fixed;
     background-position: center center;
     min-height: 650px;
     width: 100%;
