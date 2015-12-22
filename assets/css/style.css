@@ -237,12 +237,12 @@ a:hover {
    Wrap Sections
    ========================================================================== */
 #headerwrap {
-    background: url(../img/back.jpg) no-repeat center top;
+    background: url(../img/back.jpg) no-repeat;
     margin-top: -70px;
     padding-top: 250px;
     text-align: center;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center top;
     min-height: 650px;
     width: 100%;
     background-size: 100%;
