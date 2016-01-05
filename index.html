@@ -14,6 +14,7 @@
         <link href="assets/css/bootstrap.css" rel="stylesheet">
 
         <!-- Custom styles -->
+        <link rel="stylesheet" href="assets/css/paradeiser.css">
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
@@ -23,33 +24,59 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
 <body>
 
     <header>
         <!-- Static navbar -->
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">CLINT <span>LOSEE</span> <br /><span>DIGITAL</span> PORTFOLIO</a>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand paradeiser-hidden-phone" href="index.html">CLINT <span>LOSEE</span> <br /><span>DIGITAL</span> PORTFOLIO</a>
+                </div>
+            
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#work">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div><!-- nav-collapse -->
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#work">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-              </ul>
-            </div><!-- nav-collapse -->
-          </div>
-        </div>
+          
+            <nav class="paradeiser paradeiser-hidden-desktop paradeiser-hidden-tablet navbar-header">
+                <a class="paradeiser-brand " href="index.html">CLINT <span>LOSEE</span> <br><span>DIGITAL</span> PORTFOLIO</a>
 
+                <a href="index.html">
+                    <div class="paradeiser_icon_canvas">
+                        <img src="assets/img/menu_home.svg" alt="Navigate to Home"/>
+                    </div>
+                    <span>Home</span>
+                </a>
+
+                <a href="about.html">
+                    <div class="paradeiser_icon_canvas">
+                        <img src="assets/img/menu_user.svg" alt="Navigate to About Page"/>
+                    </div>
+                    <span>About</span>
+                </a>
+
+                <a href="#work">
+                    <div class="paradeiser_icon_canvas">
+                        <img src="assets/img/menu_screen.svg" alt="Navigate to Portfolio Section"/>
+                    </div>
+                    <span>Portfolio</span>
+                </a>
+
+                <a href="#skills">
+                    <div class="paradeiser_icon_canvas">
+                        <img src="assets/img/menu_inspiration.svg" alt="Navigate to Skills Section"/>
+                    </div>
+                    <span>Skills</span>
+                </a>
+            </nav>
+        </div><!-- end navbar -->
+        
         <section id="headerwrap" data-type="background" data-speed="3">
     	    <div class="container">
     			<div class="row">
@@ -266,6 +293,14 @@
     			<div class="col-lg-4">
                     <p>clint.losee [at] gmail.com</p>
     			</div>
+                <div class="col-lg-12" id="icon-credit">
+                    <small>Menu icons made by 
+                        <a href="http://www.freepik.com" title="Freepik" rel="nofollow">Freepik</a>, 
+                        <a href="http://www.flaticon.com/authors/icon-works" title="Icon Works" rel="nofollow">Icon Works</a> from 
+                        <a href="http://www.flaticon.com" title="Flaticon" rel="nofollow">www.flaticon.com</a>             is licensed by 
+                        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" rel="nofollow">CC BY 3.0</a>
+                    </small>
+                </div>
     		</div>
     	</div>
     </footer><!-- footerwrap -->
@@ -276,6 +311,7 @@
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

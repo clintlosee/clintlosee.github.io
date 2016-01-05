@@ -48,6 +48,12 @@ hr {
     margin-top: 80px;
 }
 
+@media only screen and (max-width: 767px) {
+    .mt-40 {
+        margin-top: 40px;
+    }
+}
+
 .mb {
     margin-bottom: 80px;
 }
@@ -82,18 +88,18 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar-brand {
-    font-weight: 700;
+.navbar-brand, .paradeiser-brand {
+    font-weight: 700 !important;
     font-size: 1.3em;
 }
 
-.navbar-brand span {
+.navbar-brand span, .paradeiser-brand span {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
-.navbar-default .navbar-brand {
-    color: #ff6600; /*#1abc9c;*/
+.navbar-default .navbar-brand, .paradeiser-brand {
+    color: #ff6600 !important; /*#1abc9c;*/
     -webkit-transition: color 0.2s ease-out, color 0.2s ease-out;
             transition: color 0.2s ease-out, color 0.2s ease-out;
 }
@@ -312,6 +318,14 @@ a:hover {
     color: #ff6600;
     text-decoration: none;
     transition: color 0.2s ease-out, color 0.2s ease-out;
+}
+#footerwrap #icon-credit {
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+#footerwrap #icon-credit a {
+    margin-left: 0;
+    color: #6f6f6f;
 }
 
 #workwrap {
@@ -1119,6 +1133,12 @@ a:hover {
 .no-touch .cl-top:hover {
     background-color: #e86256;
     opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    #headerwrap {
+        padding-top: 170px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
