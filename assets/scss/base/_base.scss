@@ -19,10 +19,74 @@ html {
     box-sizing: inherit;
 } 
 
-/**
-* Basic styles for links
+::-moz-selection {
+    background: $brandOrange; /* #f2c2c9;*/
+    color: $white; /* #a4003a;*/
+    text-shadow: none;
+}
+
+::selection {
+    background: $brandOrange; /* #f2c2c9;*/
+    color: $white; /* #a4003a;*/
+    text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
 */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mt-40 {
+        margin-top: 40px;
+    }
+}
+
+.mb {
+    margin-bottom: 80px;
+}
+
+/* ==========================================================================
+General styles
+========================================================================== */
+
+body {
+    @extend %montserrat-reg;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
 a {
-//    color: $brand-color;
+    color: $brandOrange;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+a:hover {
+    color: #1c09b2;
     text-decoration: none;
 }
