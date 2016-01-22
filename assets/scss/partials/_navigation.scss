@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains navigation section styles.
+// -----------------------------------------------------------------------------
+
+.navbar-brand, .paradeiser-brand {
+    font-weight: 700 !important;
+    font-size: 1.3em;
+}
+
+.navbar-brand span, .paradeiser-brand span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.navbar-default .navbar-brand, .paradeiser-brand {
+    color: #ff6600 !important; /*#1abc9c;*/
+    -webkit-transition: color 0.2s ease-out, color 0.2s ease-out;
+    transition: color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ff6600; /*#1abc9c;*/
+    background-color: transparent;
+    border-bottom: 2px solid #ff6600; /*#1abc9c*/
+    -webkit-transition: color 0.2s ease-in, color 0.2s ease-in;
+    transition: color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.navbar-default a:hover {
+    color: #888888 !important;
+    -webkit-transition: color 0.2s ease-in, color 0.2s ease-in;
+    transition: color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ff6600; /*#1abc9c;*/
+}

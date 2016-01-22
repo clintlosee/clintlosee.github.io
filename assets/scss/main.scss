@@ -20,7 +20,9 @@
 // 4. Layout-related
 @import "partials/header";
 @import "partials/footer";
-//@import "partials/navigation";
+@import "partials/navigation";
+@import "partials/gallery";
+@import "partials/skills";
 
 // 5. Components
 @import "components/buttons";
