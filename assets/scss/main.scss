@@ -15,7 +15,7 @@
 @import "base/fonts";
 @import "base/typography";
 @import "base/base";
-//@import "base/animations";
+@import "base/animations";
 
 // 4. Layout-related
 @import "partials/header";
@@ -23,6 +23,7 @@
 @import "partials/navigation";
 @import "partials/gallery";
 @import "partials/skills";
+@import "partials/social";
 
 // 5. Components
 @import "components/buttons";
