@@ -19,18 +19,18 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-#workwrap h1 {
-    color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    letter-spacing: 4px;
-    font-size: 80px;
-    font-weight: bold;
-}
-
-#workwrap h4 {
-    font-weight: 400;
-    color: #ffffff
+    
+    h1 {
+        color: $white;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        letter-spacing: 4px;
+        font-size: 80px;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-weight: 400;
+        color: $white;
+    }
 }

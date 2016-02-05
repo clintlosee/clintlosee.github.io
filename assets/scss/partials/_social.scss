@@ -5,22 +5,21 @@
 #social {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #f2f2f2;
-}
-
-#social i {
-    font-size: 40px;
-    padding: 10px 0;
-    color: #4a4a4a;
-    transition: color 0.2s ease-out, color 0.2s ease-out;
-}
-
-#social i:hover {
-    color: #ff6600;
-    /*#1abc9c*/
-    transition: color 0.2s ease-in, color 0.2s ease-in;
+    background-color: $offWhite;
+    
+    i {
+        font-size: 40px;
+        padding: 10px 0;
+        color: $darkGray;
+        transition: color 0.2s ease-out, color 0.2s ease-out;
+        
+        &:hover {
+            color: $brandOrange; /*#1abc9c*/
+            transition: color 0.2s ease-in, color 0.2s ease-in;
+        }
+    }
 }
 
 .socialicon {
-    border: 1px solid #333;
+    border: 1px solid $darkerGray;
 }

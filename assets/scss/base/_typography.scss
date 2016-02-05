@@ -45,8 +45,9 @@ a {
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     text-decoration: none;
-}
-a:hover {
-    color: #1c09b2;
-    text-decoration: none;
+    
+    &:hover {
+        color: #1c09b2;
+        text-decoration: none;
+    }
 }
