@@ -88,6 +88,8 @@ a:hover {
     text-decoration: none;
 }
 
+
+
 .navbar-brand, .paradeiser-brand {
     font-weight: 700 !important;
     font-size: 1.3em;
@@ -238,6 +240,8 @@ a:hover {
     -webkit-transition: width 0.1s ease-in, padding 0.1s ease-in;
             transition: width 0.1s ease-in, padding 0.1s ease-in
 }
+
+/* 15-242 above added to scss files */
 
 /* ==========================================================================
    Wrap Sections
@@ -410,10 +414,13 @@ a:hover {
     transition: opacity 0.3s ease-in;
 }
 
+
 /* ========================== Portfolio ========================== */
 .img-responsive {
     border: 3px solid #efefef;
 }
+
+/* 249-420 above added to scss files */
 
 /* ========================== Skills Styles ====================== */
 .skillbar {
@@ -1091,6 +1098,7 @@ a:hover {
     }
 }
 
+/* 424-1099 above added to scss files */
 
 /* ============== Back to Top ====================== */
 .cl-top {
@@ -1156,3 +1164,5 @@ a:hover {
         bottom: 30px;
     }
 }
+
+/* 1103 to 1166 added */

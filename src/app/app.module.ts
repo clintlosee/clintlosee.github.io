@@ -1,0 +1,29 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Http, HTTP_PROVIDERS } from '@angular/http';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header.component';
+import { MainComponent } from './main/main.component';
+import { routing } from './app.routing';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MainComponent
+  ],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    routing
+  ],
+  providers: [Http, HTTP_PROVIDERS],
+  entryComponents: [AppComponent],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+
+}

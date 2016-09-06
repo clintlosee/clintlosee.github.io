@@ -1,0 +1,300 @@
+/************ Cover Template Base Styles *************/
+/*
+* Globals
+*/
+.page {
+  position: relative; }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none !important; }
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF; }
+
+/* Base structure
+================================================= */
+html, body {
+  height: 100%;
+  background-color: #EFEFEF; }
+
+body {
+  color: #222222;
+  text-align: center;
+  padding-top: 14px; }
+
+/********** Header **********/
+.jumbotron {
+  background: url("../img/background/geo3.jpg") #EFEFEF repeat;
+  margin-bottom: 0 !important; }
+  .jumbotron h2, .jumbotron h3 {
+    color: #EFEFEF;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 35px !important;
+    padding-bottom: 30px !important; } }
+
+/********** Navigation ********/
+.navbar {
+  margin-bottom: 0; }
+
+.active {
+  color: #FF6600 !important;
+  font-weight: bold; }
+
+/******* Main Content *******/
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  background: none; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 0 -8em;
+  overflow: hidden; }
+
+.footer, .push {
+  height: 4em; }
+
+#content {
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+#info {
+  font-size: 3.5em;
+  cursor: pointer;
+  margin: 20px 0 0;
+  color: #EFEFEF; }
+
+#info:hover {
+  color: #999; }
+
+.home-input {
+  margin: 10px inherit;
+  height: 50px; }
+
+.cameraLogo {
+  margin: 50px 0; }
+
+.camera-model {
+  height: 300px;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #EFEFEF;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-in;
+  transition: background-color 0.2s ease-out, color 0.2s ease-in; }
+  .camera-model:hover {
+    background-color: #cf5b34; }
+  .camera-model h1 a {
+    font-size: 2em;
+    padding: 100px;
+    margin: -25px 0;
+    color: #444; }
+    .camera-model h1 a:hover {
+      color: #EFEFEF;
+      text-decoration: none; }
+
+/******** Lens list ***********/
+.lens-list {
+  padding-top: 20px;
+  text-shadow: none; }
+
+.lens-feature {
+  margin-top: -20px; }
+
+.lens-feature h1 {
+  color: #FFFFFF; }
+
+#lens-content {
+  background-color: #EFEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: none; }
+
+#lens-content ul {
+  text-align: left; }
+
+.ind-lens {
+  height: 750px; }
+
+.lens-images {
+  margin: 20px auto; }
+
+.badge {
+  font-size: 1.5em; }
+
+/********* Footer **********/
+footer {
+  background-color: #222;
+  padding: 16px 0;
+  margin: 50px 0 0;
+  color: #999;
+  /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 979px), display and (-webkit-min-device-pixel-ratio: 2) and (max-width: 979px) {
+  .camera-model {
+    height: 250px; }
+    .camera-model h1 a {
+      font-size: 1.3em;
+      margin: -10px 0;
+      padding: 75px; } }
+
+@media (max-width: 767px) {
+  body {
+    margin-top: 40px; }
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out; }
+  .top-nav-collapse {
+    padding: 0; } }
+
+/********************* TABLE STYLING *******************************/
+table thead th {
+  text-align: center; }
+
+/********************* INPUT STYLING *******************************/
+input {
+  color: #666; }
+
+.radio {
+  float: left; }
+  .radio label {
+    padding-right: 10px; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, x-ng-cloak {
+  display: none; }
+
+/********* Buttons ********
+see http://sixrevisions.com/css/ghost-buttons/ for more details *******
+
+.ghost-button {
+display: inline-block;
+width: 200px;
+padding: 8px;
+color: #fff;
+border: 1px solid #fff; /* Thick border use 3px
+text-align: center;
+outline: none;
+text-decoration: none;
+}
+.ghost-button:hover, .ghost-button:active {
+background-color: #fff;
+color: #000;
+}*/
+/************************************************ Simple Transition */
+a.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  background-color: none;
+  color: #444 !important;
+  border: 2px solid #444;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-in;
+  transition: background-color 0.2s ease-out, color 0.2s ease-in; }
+
+a.ghost-button:hover, a.ghost-button:active {
+  background-color: #cf5b34;
+  color: #FFFFFF !important;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in; }
+
+/* Login Modal */
+.ngdialog-message {
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-shadow: none; }
+
+.loginInput {
+  padding: 10px; }
+
+.loginInput label {
+  text-align: left;
+  padding: 0; }
+
+/* ANIMATIONS
+============================================================================= */
+.spinner {
+  animation: spin 1s infinite;
+  -webkit-animation: spin 1s infinite;
+  -moz-animation: spin 1s infinite; }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+/* NGANIMATE
+=================== */
+/* show and hide */
+.show-hide-message.ng-hide-remove {
+  -webkit-animation: flipInX 0.3s both ease;
+  animation: flipInX 0.3s both ease; }
+
+.page.ng-enter {
+  -webkit-animation: fadeIn 0.3s both ease;
+  animation: fadeIn 0.3s both ease; }
+
+.page.ng-leave {
+  -webkit-animation: fadeOut 0.3s both ease;
+  animation: fadeOut 0.3s both ease; }
+
+/*  ng-view Animation  */
+/* ng-repeat animations 
+=============================================*/
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  position: relative;
+  left: 5px; }
+
+.repeat-animation.ng-enter {
+  opacity: 0; }
+
+.repeat-animation.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.repeat-animation.ng-leave {
+  opacity: 1; }
+
+.repeat-animation.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.repeat-animation.ng-move {
+  left: 2px;
+  opacity: 0.5; }
+
+.repeat-animation.ng-move.ng-move-active {
+  left: 0;
+  opacity: 1; }
