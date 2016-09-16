@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'header',
+    selector: 'header-section',
     template: `
         <h1>This is the header</h1>
     `
