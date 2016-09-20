@@ -1,11 +1,13 @@
 /* tslint:disable:no-unused-variable */
 
-import { addProviders, async, inject } from '@angular/core/testing';
+import { async, inject, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('App: FALng2', () => {
   beforeEach(() => {
-    addProviders([AppComponent]);
+    TestBed.configureTestingModule({
+      declarations: [AppComponent]
+    })
   });
 
   it('should create the app',
