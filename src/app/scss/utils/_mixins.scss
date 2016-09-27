@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/*
+ * Size
+ * Example: @include size(100%); // returns width: 100%; height: 100%;
+ * Example: @include size(100%, 1px); // returns width: 100%; height: 1px;
+ */
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+/*
+ * Vendor prefix
+ * Example: @include prefix(transform, rotate(42deg), webkit moz ms o);
+ */
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+    }
+    #{$property}: #{$value};
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin large($force: false) {
+    @if $force == false {
+        @media screen and (min-width: 1200px){
+            @content;
+        }
+    }
+}
+@mixin desktop($force: false) {
+    @if $force == false {
+        @media screen and (min-width: 980px){
+            @content;
+        }
+    }
+}
+@mixin tablet() {
+    @media screen and (max-width: 979px), display and (-webkit-min-device-pixel-ratio: 2) and (max-width: 979px){
+        @content;
+    }
+}
+@mixin mobile($force: false) {
+    @if $force == true {
+        @media screen and (max-width: 767px){
+            @content;
+        }
+    }
+}
