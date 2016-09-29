@@ -38,10 +38,10 @@ $(function() {
         });
     });
 
-    // Enable headroom on paradeiser menu
-    var myElement = document.querySelector(".paradeiser");
-    var headroom  = new Headroom(myElement, {
-        tolerance : 5
-    });
-    headroom.init();
+    // // Enable headroom on paradeiser menu
+    // var myElement = document.querySelector(".paradeiser");
+    // var headroom  = new Headroom(myElement, {
+    //     tolerance : 5
+    // });
+    // headroom.init();
 });
