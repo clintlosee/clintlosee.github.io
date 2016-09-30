@@ -1,0 +1,65 @@
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand paradeiser-hidden-phone" href="index.html" [innerHTML]="brand"></a>
+        </div>
+    
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div><!-- nav-collapse -->
+    </div>
+    
+    <nav class="paradeiser paradeiser-hidden-desktop paradeiser-hidden-tablet navbar-header">
+        <a class="paradeiser-brand " href="index.html" [innerHTML]="brand"></a>
+
+        <!-- use *ngFor -->
+        <navigation-item
+            [hrefLink]="nav[0].hrefLink"
+            [linkIcon]="nav[0].linkIcon"
+            [linkAltText]="nav[0].linkAltText"
+            [linkTitle]="nav[0].linkTitle">
+        </navigation-item>
+
+        <a href="index.html">
+            <div class="paradeiser_icon_canvas">
+                <img src="../../assets/img/menu_home.svg" alt="Navigate to Home"/>
+            </div>
+            <span>Home</span>
+        </a>
+
+        <a href="about.html">
+            <div class="paradeiser_icon_canvas">
+                <img src="../../assets/img/menu_user.svg" alt="Navigate to About Page"/>
+            </div>
+            <span>About</span>
+        </a>
+
+        <a href="#work">
+            <div class="paradeiser_icon_canvas">
+                <img src="../../assets/img/menu_screen.svg" alt="Navigate to Portfolio Section"/>
+            </div>
+            <span>Portfolio</span>
+        </a>
+
+        <a href="#skills">
+            <div class="paradeiser_icon_canvas">
+                <img src="../../assets/img/menu_inspiration.svg" alt="Navigate to Skills Section"/>
+            </div>
+            <span>Skills</span>
+        </a>
+        
+        <a href="/blog">
+            <div class="paradeiser_icon_canvas">
+                <img src="../../assets/img/menu_blog.svg" alt="Navigate to Blog"/>
+            </div>
+            <span>Blog</span>
+        </a>
+    </nav>
+</div><!-- end navbar -->

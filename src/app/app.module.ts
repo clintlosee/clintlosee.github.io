@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Http } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { HeaderComponent, FooterComponent, SpinnerComponent } from './shared/index';
+import { HeaderComponent, FooterComponent, NavigationComponent, NavigationItemComponent, SpinnerComponent } from './shared/index';
 import { routing } from './app.routing';
 
 @NgModule({
@@ -13,7 +13,9 @@ import { routing } from './app.routing';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    NavigationComponent,
+    NavigationItemComponent
   ],
   imports: [
     BrowserModule,
