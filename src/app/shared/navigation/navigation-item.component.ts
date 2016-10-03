@@ -5,10 +5,12 @@ import { Component, Input } from '@angular/core';
     template: `
         <a href="{{ hrefLink }}">
             <div class="paradeiser_icon_canvas">
-                <img [src]="linkIcon" alt="{{ linkAltText }}"/>
+                <img src="{{ linkIcon }}" alt="{{ linkAltText }}"/>
             </div>
             <span>{{ linkTitle }}</span>
         </a>
+
+       
     `
     // templateUrl: 'navigation-item.component.html'
 })

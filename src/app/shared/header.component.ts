@@ -16,16 +16,6 @@ export class HeaderComponent implements OnInit {
         resumeLink: "https://drive.google.com/open?id=0B6Oh19B81MAEX3ZIYW5mTktLNUk"
     }
 
-    navInfo = [
-        {
-            hrefLink: "index.html",
-            linkIcon: "./assets/img/menu_home.svg",
-            linkAltText: "Navigate to Home",
-            linkTitle: "Home"
-        }
-
-    ]
-
     constructor() { }
 
     ngOnInit() {
