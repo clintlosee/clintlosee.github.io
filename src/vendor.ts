@@ -15,6 +15,7 @@ import 'bootswatch/paper/bootstrap.min.css';
 import './app/styles.scss';
 import 'bootstrap/dist/js/bootstrap';
 import 'font-awesome/css/font-awesome.min.css';
+import 'pure-css-loader/dist/css-loader.css';
 import 'headroom.js/dist/headroom.js';
 import './app/assets/js/main.js';
 import './app/assets/js/flexibility.js';
