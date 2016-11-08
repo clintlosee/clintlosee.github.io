@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialBarComponent } from '../social/index';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +10,6 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

@@ -27,6 +27,7 @@
     "bootswatch": "^3.3.7",
     "core-js": "^2.4.1",
     "express": "^4.14.0",
+    "font-awesome": "^4.7.0",
     "headroom.js": "^0.9.3",
     "jquery": "^3.1.0",
     "reflect-metadata": "^0.1.3",
@@ -59,6 +60,7 @@
     "ts-loader": "^0.8.1",
     "typescript": "^2.0.2",
     "typings": "^1.3.2",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.14.0"

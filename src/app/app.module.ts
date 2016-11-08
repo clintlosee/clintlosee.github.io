@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Http } from '@angular/http';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './main/index';
+import { SocialBarComponent } from './social/index';
 import { HeaderComponent, FooterComponent, NavigationComponent, NavigationItemComponent, SpinnerComponent } from './shared/index';
 import { routing } from './app.routing';
 
@@ -15,7 +16,8 @@ import { routing } from './app.routing';
     FooterComponent,
     MainComponent,
     NavigationComponent,
-    NavigationItemComponent
+    NavigationItemComponent,
+    SocialBarComponent
   ],
   imports: [
     BrowserModule,

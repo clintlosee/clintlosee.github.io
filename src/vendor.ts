@@ -14,6 +14,7 @@ import 'rxjs';
 import 'bootswatch/paper/bootstrap.min.css';
 import './app/styles.scss';
 import 'bootstrap/dist/js/bootstrap';
+import 'font-awesome/css/font-awesome.min.css';
 import 'headroom.js/dist/headroom.js';
 import './app/assets/js/main.js';
 import './app/assets/js/flexibility.js';
