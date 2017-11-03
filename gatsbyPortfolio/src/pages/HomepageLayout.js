@@ -47,7 +47,9 @@ export default class HomepageLayout extends Component {
 
         return (
             <div>
-                {visible ? <FixedMenu /> : null}
+                {
+                    visible ? <FixedMenu /> : null
+                }
 
                 <Visibility
                     onBottomPassed={this.showFixedMenu}
@@ -129,7 +131,7 @@ export default class HomepageLayout extends Component {
                                     We Make Bananas That Can Dance
                                 </Header>
                                 <p style={{ fontSize: '1.33em' }}>
-                                    Yes that's right, you thought it was the
+                                    Yes that is right, you thought it was the
                                     stuff of dreams, but even bananas can be
                                     bioengineered.
                                 </p>

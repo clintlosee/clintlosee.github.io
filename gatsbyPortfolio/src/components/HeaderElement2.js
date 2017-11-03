@@ -15,7 +15,7 @@ import {
 } from 'semantic-ui-react';
 
 export default class FixedMenu extends Component {
-    state = { activeItem: 'home' }
+    state = { activeItem: 'home', visible: true }
     handleItemClick = (e, { name }) => this.setState({ activeItem: name });
     hideFixedMenu = () => this.setState({ visible: false });
     showFixedMenu = () => this.setState({ visible: true });
@@ -25,7 +25,7 @@ export default class FixedMenu extends Component {
 
         return (
             <div>
-            {visible ? 
+            {visible ?
                 <Menu stackable sticky pointing secondary>
                     <Container>
                         <Menu.Item name="home" onClick={this.handleItemClick}>

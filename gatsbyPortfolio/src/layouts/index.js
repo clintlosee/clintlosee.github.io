@@ -62,7 +62,7 @@ import 'semantic-ui-css/semantic.min.css';
     //         padding: '1.45rem 1.0875rem',
     //         }}
     //     >
-    //         <Link 
+    //         <Link
     //             to="/"
     //             style={{
     //                 color: 'white',
@@ -91,15 +91,8 @@ const TemplateWrapper = ({ children }) => (
             ]}
         />
 
-
-        
-
-
-
-
-
-
         <HeaderElement2 />
+
         <Container
             style={{
                 margin: '0 auto',
@@ -110,7 +103,7 @@ const TemplateWrapper = ({ children }) => (
         >
             {children()}
         </Container>
-        
+
     </div>
 );
 
