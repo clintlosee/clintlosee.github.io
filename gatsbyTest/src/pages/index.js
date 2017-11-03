@@ -36,10 +36,11 @@ const IndexPage = () => (
         <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 610, padding: '1em 0em' }}
             vertical
         >
-            <Container text>
+            <Image fluid src='/static/assets/images/back.jpg' width="100%" height="100%" style={{ marginBottom: 0, position: 'absolute', top: 0, left: 0, zIndex: 1 }} />
+            <Container text style={{ position: 'absolute', zIndex: 9999, left: 0, right: 0 }}>
                 <Header
                     as="h6"
                     content="Hello, my name is"
