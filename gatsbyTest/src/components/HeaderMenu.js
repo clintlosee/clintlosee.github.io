@@ -14,6 +14,14 @@ import {
     Visibility
 } from 'semantic-ui-react';
 
+const style = {
+    logo: {
+        fontSize: '1em',
+        margin: 0,
+        color: '#FF6600'
+    }
+};
+
 export default class HeaderMenu extends Component {
     state = { activeItem: 'home' }
     handleItemClick = (e, { name }) => this.setState({ activeItem: name });
@@ -24,23 +32,25 @@ export default class HeaderMenu extends Component {
         return (
             <div style={{ backgroundColor: '#000' }}>
                 <Menu stackable inverted borderless>
-                    <Menu.Item name="home" onClick={this.handleItemClick}>
+                    <Menu.Item name="home" as="h1" style={style.logo} onClick={this.handleItemClick}>
                         <img src="/logo.png" />
-                        <Link to="/">Clint Losee Digital Portfolio</Link>
+                        <Link to="/" style={style.logo}>Clint Losee Digital Portfolio</Link>
                     </Menu.Item>
                     <Menu.Menu position="right" icon="labeled">
                         <Menu.Item
                             name="home"
+                            as="span"
                             active={activeItem === 'home'}
                             onClick={this.handleItemClick}
                         >
                             <Link className="home" to="/">
                                 <Icon name='home' />
-
+                                Home
                             </Link>
                         </Menu.Item>
                         <Menu.Item
                             name="about"
+                            as="span"
                             active={activeItem === 'about'}
                             onClick={this.handleItemClick}
                         >
@@ -50,6 +60,7 @@ export default class HeaderMenu extends Component {
                         </Menu.Item>
                         <Menu.Item
                             name="projects"
+                            as="span"
                             active={activeItem === 'projects'}
                             onClick={this.handleItemClick}
                         >
@@ -59,6 +70,7 @@ export default class HeaderMenu extends Component {
                         </Menu.Item>
                         <Menu.Item
                             name="contact"
+                            as="span"
                             active={activeItem === 'contact'}
                             onClick={this.handleItemClick}
                         >
@@ -68,6 +80,7 @@ export default class HeaderMenu extends Component {
                         </Menu.Item>
                         <Menu.Item
                             name="responsive"
+                            as="span"
                             active={activeItem === 'responsive'}
                             onClick={this.handleItemClick}
                         >
@@ -77,6 +90,7 @@ export default class HeaderMenu extends Component {
                         </Menu.Item>
                         <Menu.Item
                             name="layout"
+                            as="span"
                             active={activeItem === 'layout'}
                             onClick={this.handleItemClick}
                         >
