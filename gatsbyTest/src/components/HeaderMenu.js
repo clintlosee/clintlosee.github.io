@@ -16,9 +16,14 @@ import {
 
 const style = {
     logo: {
-        fontSize: '1em',
+        fontSize: '1.5rem',
         margin: 0,
-        color: '#FF6600'
+        padding: 2,
+        color: '#FF6600',
+        fontFamily: '"Montserrat", Helvetica, Arial, sans-serif'
+    },
+    logoBold: {
+        fontWeight: '700'
     }
 };
 
@@ -34,7 +39,7 @@ export default class HeaderMenu extends Component {
                 <Menu stackable inverted borderless>
                     <Menu.Item name="home" as="h1" style={style.logo} onClick={this.handleItemClick}>
                         <img src="/logo.png" />
-                        <Link to="/" style={style.logo}>Clint Losee Digital Portfolio</Link>
+                        <Link to="/" style={style.logo}><span style={style.logoBold}>Clint</span> Losee<br/> Digital <span style={style.logoBold}>Portfolio</span></Link>
                     </Menu.Item>
                     <Menu.Menu position="right" icon="labeled">
                         <Menu.Item
