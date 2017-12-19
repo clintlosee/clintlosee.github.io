@@ -2,7 +2,7 @@ export default [
     {
         header: 'React Calculator',
         tech: 'React',
-        description: 'This is a calculator built with React',
+        description: 'A simple calculator built with React',
         image: '/static/assets/images/portfolio/react-calculator-folio.jpg',
         link: 'http://projects.clintlosee.com/React-Calculator/',
         target: '_blank'
@@ -10,7 +10,7 @@ export default [
     {
         header: 'React Weather App',
         tech: 'React',
-        description: 'This is a weather app built with React',
+        description: 'A simple weather app built with React',
         image: '/static/assets/images/portfolio/react-weather-folio.png',
         link: 'http://projects.clintlosee.com/React-Weather/',
         target: '_blank'
@@ -18,23 +18,23 @@ export default [
     {
         header: 'React Express Email App',
         tech: 'React, Node, Express, MongoDB',
-        description: 'This is a React/Express/Node app',
+        description: 'A React/Express/Node app that allows you to send email surveys and record responses.',
         image: '/static/assets/images/portfolio/emailyapp-folio.png',
         link: 'https://pure-hamlet-14064.herokuapp.com/',
         target: '_blank'
     },
     {
-        header: 'React Native',
+        header: 'RC Willey Mobile App',
         tech: 'React, React Native',
-        description: 'This is a React Native app',
-        image: '/static/assets/images/portfolio/rn-folio.jpg',
+        description: 'RC Willey mobile app published on iOS and Android.',
+        image: '/static/assets/images/portfolio/reactnative-rcw-folio.jpg',
         link: 'page-2',
-        target: ''
+        target: '_blank'
     },
     {
         header: 'Store Review App',
         tech: 'Node, Express, MongoDB',
-        description: 'This is a store review app built with Node, Express and MongoDB',
+        description: 'A restaurant listing app built with Node, Express and MongoDB that allows for reviews and new store listings.',
         image: '/static/assets/images/portfolio/deliciousapp-folio.png',
         link: 'https://delicious-store-app-pfymqvxbte.now.sh/',
         target: '_blank'
@@ -42,7 +42,7 @@ export default [
     {
         header: 'Digital Flash Cards',
         tech: 'Angular',
-        description: 'This is a digital flash card app built with Angular',
+        description: 'A digital flash card app built with Angular',
         image: '/static/assets/images/portfolio/digitalflash-folio.jpg',
         link: 'https://github.com/clintlosee/DigitalFlash',
         target: '_blank'
@@ -50,7 +50,7 @@ export default [
     {
         header: 'Find-A-Lens',
         tech: 'Angular',
-        description: 'This is a lens finder app built with Angular',
+        description: 'A photography site to allow you to find lenses based on specific criteria that is built with Angular',
         image: '/static/assets/images/portfolio/findalens-folio.jpg',
         link: 'https://github.com/clintlosee/FindALens',
         target: '_blank'
@@ -58,7 +58,7 @@ export default [
     {
         header: 'React YouTube',
         tech: 'React',
-        description: 'This is a YouTube search app built with React',
+        description: 'A simple YouTube video search app built with React',
         image: '/static/assets/images/portfolio/react-youtube-folio.jpg',
         link: 'http://projects.clintlosee.com/React-Youtube/',
         target: '_blank'
@@ -66,7 +66,7 @@ export default [
     {
         header: 'RC Willey Design Consultation',
         tech: 'CSS3, JS, jQuery',
-        description: 'This is a design consult program for RCW',
+        description: 'The design consultation program built for RC Willey.',
         image: '/static/assets/images/portfolio/rcw-design-consult-folio.png',
         link: 'http://www.rcwilley.com/Design',
         target: '_blank'
@@ -74,22 +74,22 @@ export default [
     {
         header: 'User CRM MEAN App',
         tech: 'Angular, Node, Express, MongoDB',
-        description: 'This is a user crm app built with the MEAN stack',
+        description: 'A user crm app built using the MEAN stack',
         image: '/static/assets/images/portfolio/user-crm-mean-app-folio.png',
-        // link: 'http://usercrm-closee.herokuapp.com/',
-        link: 'userCrm',
+        link: 'http://usercrm-closee.herokuapp.com/',
+        // link: 'userCrm',
         target: ''
     },
     {
         header: 'Fly Pattern Index',
         tech: 'PHP',
-        description: 'This is a fly pattern index app built with PHP',
+        description: 'A fly pattern index app built using PHP',
         image: '/static/assets/images/portfolio/flypattern-folio.png',
         link: 'http://dgm3760.clintlosee.com/Final/',
         target: '_blank'
     },
     {
-        header: 'Title West Site',
+        header: 'Title West Title Company',
         tech: 'JS, jQuery, HTML, CSS3, PHP',
         description: 'This is the TW website',
         image: '/static/assets/images/portfolio/titlewest-folio.png',
@@ -99,7 +99,7 @@ export default [
     {
         header: 'Clint Losee Photography',
         tech: 'HTML, CSS, JS, jQuery',
-        description: 'This is a basic HTML/CSS/JS website',
+        description: 'A basic HTML/CSS/JS website used for my first photo website.',
         image: '/static/assets/images/portfolio/clintloseephoto-folio.png',
         link: 'http://clphotov1.pancakeapps.com/',
         target: '_blank'
