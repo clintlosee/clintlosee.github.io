@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children }) => (
       title="Clint Losee Digital Portfolio"
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'Clint Losee, Web Developer, Front End Developer, Digital Portfolio, React, JavaScript' },
       ]}
     />
       {

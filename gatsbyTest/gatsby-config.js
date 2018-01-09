@@ -9,7 +9,7 @@ module.exports = {
             options: {
                 fonts: [
                     `Montserrat`,
-                    `source sans pro\:300,400,700`
+                    `source sans pro\:200,200i,400,700`
                 ]
             }
         }
