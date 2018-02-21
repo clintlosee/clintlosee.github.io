@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
+import './pageclip';
+import './pageclip.css';
 
 import HeaderMenu from '../components/HeaderMenu';
 import FooterSegment from '../components/FooterSegment';

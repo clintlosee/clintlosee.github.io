@@ -68,7 +68,7 @@ export default class HeaderMenu extends Component {
                             active={activeItem === 'about'}
                             onClick={this.handleItemClick}
                         >
-                            <Link className="about" to="/page-2">
+                            <Link className="about" to="/about">
                                 <Icon name='user' />
                                 About
                             </Link>
