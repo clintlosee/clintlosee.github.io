@@ -30,6 +30,38 @@ export default class ContactPage extends Component {
                 </Divider>
 
                 <Segment raised padded color="orange" style={styles.formStyle}>
+                    <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <Form.Group widths="equal">
+                            <Form.Input
+                                size="large"
+                                type="text"
+                                name="name"
+                                fluid
+                                label="Name"
+                                placeholder="What's your name?"
+                            />
+                            <Form.Input
+                                size="large"
+                                type="text"
+                                name="email"
+                                fluid
+                                label="Email"
+                                placeholder="email@gmail.com"
+                            />
+                        </Form.Group>
+                        <Form.TextArea
+                            size="large"
+                            type="text"
+                            name="message"
+                            label="Message"
+                            placeholder="What can I help you with?"
+                        />
+                        <Form.Button type="submit" content="Submit Netlify" />
+                    </Form>
+                </Segment>
+
+                <Segment raised padded color="orange" style={styles.formStyle}>
                     <Form
                         action="https://send.pageclip.co/3oMr9mtH0kSj1HIHiuD8YAe4zxxOIyjG"
                         method="post"
