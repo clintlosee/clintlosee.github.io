@@ -42,22 +42,12 @@ class IndexPage extends Component {
             return (
                 <Grid.Column key={item.header}>
                     <Segment>
-                        <Card
-                            fluid
-                            as="a"
-                            href={item.link}
-                            target={item.target}
-                        >
-                            <Image
-                                src={item.image}
-                                style={{ marginBottom: 0 }}
-                            />
+                        <Card fluid as="a" href={item.link} target={item.target}>
+                            <Image src={item.image} style={{ marginBottom: 0 }} />
                             <Card.Content>
                                 <Card.Header>{item.header}</Card.Header>
                                 <Card.Meta>Technologies: {item.tech}</Card.Meta>
-                                <Card.Description>
-                                    {item.description}
-                                </Card.Description>
+                                <Card.Description>{item.description}</Card.Description>
                             </Card.Content>
                         </Card>
                     </Segment>
@@ -69,18 +59,18 @@ class IndexPage extends Component {
     render() {
         return (
             <div>
-            <Segment
-                textAlign="center"
-                style={{
-                    minHeight: 500,
-                    padding: '1em 0em',
-                    background: 'url(/static/assets/images/back.jpg)',
-                    backgroundAttachment: 'fixed',
-                    backgroundPosition: 'center top',
-                    backgroundSize: 'cover'
-                }}
-                vertical
-            >
+                <Segment
+                    textAlign="center"
+                    style={{
+                        minHeight: 500,
+                        padding: '1em 0em',
+                        background: 'url(/static/assets/images/back.jpg)',
+                        backgroundAttachment: 'fixed',
+                        backgroundPosition: 'center top',
+                        backgroundSize: 'cover'
+                    }}
+                    vertical
+                >
                     <Container
                         text
                         style={{
@@ -134,52 +124,47 @@ class IndexPage extends Component {
                 </Segment>
 
                 {
-                // <Segment style={{ padding: '0em' }} vertical>
-                //     <Grid celled="internally" columns="equal" stackable>
-                //         <Grid.Row textAlign="center">
-                //             <Grid.Column
-                //                 style={{
-                //                     paddingBottom: '5em',
-                //                     paddingTop: '5em'
-                //                 }}
-                //             >
-                //                 <Header as="h3" style={{ fontSize: '2em' }}>
-                //                     "What a Company"
-                //                 </Header>
-                //                 <p style={{ fontSize: '1.33em' }}>
-                //                     That is what they all say about us
-                //                 </p>
-                //             </Grid.Column>
-                //             <Grid.Column
-                //                 style={{
-                //                     paddingBottom: '5em',
-                //                     paddingTop: '5em'
-                //                 }}
-                //             >
-                //                 <Header as="h3" style={{ fontSize: '2em' }}>
-                //                     "I shouldn't have gone with their
-                //                     competitor."
-                //                 </Header>
-                //                 <p style={{ fontSize: '1.33em' }}>
-                //                     <Image
-                //                         avatar
-                //                         src="/assets/images/avatar/large/nan.jpg"
-                //                     />
-                //                     <b>Nan</b> Chief Fun Officer Acme Toys
-                //                 </p>
-                //             </Grid.Column>
-                //         </Grid.Row>
-                //     </Grid>
-                // </Segment>
+                    // <Segment style={{ padding: '0em' }} vertical>
+                    //     <Grid celled="internally" columns="equal" stackable>
+                    //         <Grid.Row textAlign="center">
+                    //             <Grid.Column
+                    //                 style={{
+                    //                     paddingBottom: '5em',
+                    //                     paddingTop: '5em'
+                    //                 }}
+                    //             >
+                    //                 <Header as="h3" style={{ fontSize: '2em' }}>
+                    //                     "What a Company"
+                    //                 </Header>
+                    //                 <p style={{ fontSize: '1.33em' }}>
+                    //                     That is what they all say about us
+                    //                 </p>
+                    //             </Grid.Column>
+                    //             <Grid.Column
+                    //                 style={{
+                    //                     paddingBottom: '5em',
+                    //                     paddingTop: '5em'
+                    //                 }}
+                    //             >
+                    //                 <Header as="h3" style={{ fontSize: '2em' }}>
+                    //                     "I shouldn't have gone with their
+                    //                     competitor."
+                    //                 </Header>
+                    //                 <p style={{ fontSize: '1.33em' }}>
+                    //                     <Image
+                    //                         avatar
+                    //                         src="/assets/images/avatar/large/nan.jpg"
+                    //                     />
+                    //                     <b>Nan</b> Chief Fun Officer Acme Toys
+                    //                 </p>
+                    //             </Grid.Column>
+                    //         </Grid.Row>
+                    //     </Grid>
+                    // </Segment>
                 }
 
                 <Segment basic>
-                    <Header
-                        as="h2"
-                        content="Portfolio"
-                        style={style.header}
-                        textAlign="center"
-                    />
+                    <Header as="h2" content="Portfolio" style={style.header} textAlign="center" />
                     <Grid columns={3} stackable>
                         {this.renderPortfolio()}
                     </Grid>

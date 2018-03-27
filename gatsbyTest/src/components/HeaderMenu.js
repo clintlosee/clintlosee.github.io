@@ -14,10 +14,10 @@ import {
     Visibility
 } from 'semantic-ui-react';
 
-const style = {
+const styles = {
     headerLogo: {
         margin: 0,
-        padding: 2
+        padding: 5
     },
     logo: {
         fontSize: '1.5rem',
@@ -31,6 +31,9 @@ const style = {
         fontWeight: 700,
         color: '#FF6600',
         fontStyle: 'normal'
+    },
+    menuContainer: {
+        margin: '0 5%'
     }
 };
 
@@ -42,13 +45,13 @@ export default class HeaderMenu extends Component {
         const { activeItem, visible } = this.state;
 
         return (
-            <div style={{ backgroundColor: '#000' }}>
-                <Menu stackable inverted borderless>
-                    <Menu.Item name="home" as="h1" style={style.headerLogo} onClick={this.handleItemClick}>
+            <div style={{ backgroundColor: '#1b1c1d', }}>
+                <Menu stackable inverted borderless style={styles.menuContainer}>
+                    <Menu.Item name="home" as="h1" style={styles.headerLogo} onClick={this.handleItemClick}>
                         {
                             // <img src="/logo.png" />
                         }
-                        <Link to="/" style={style.logo}><span style={style.logoBold}>Clint</span> Losee<br/> Digital <span style={style.logoBold}>Portfolio</span></Link>
+                        <Link to="/" style={styles.logo}><span style={styles.logoBold}>Clint</span> Losee<br/> Digital <span style={styles.logoBold}>Portfolio</span></Link>
                     </Menu.Item>
                     <Menu.Menu position="right" icon="labeled">
                         <Menu.Item

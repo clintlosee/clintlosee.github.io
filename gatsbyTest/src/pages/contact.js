@@ -24,9 +24,9 @@ export default class ContactPage extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                <Header size="huge">Contact Me</Header>
                 <Divider horizontal style={styles.message}>
-                    Send Me A Message:
+                    <Header size="huge">Contact Me</Header>
+                    Send Me A Message
                 </Divider>
 
                 <Segment raised padded color="orange" style={styles.formStyle}>

@@ -16,51 +16,70 @@ import {
 
 const FooterSegment = () => {
     return (
-        <Segment inverted vertical style={{ padding: '5em 0em' }}>
+        <Segment inverted vertical style={{ padding: '5em 0 0em' }}>
             <Container>
                 <Grid divided inverted stackable>
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Header inverted as="h4" content="About" />
+                            <Header inverted as="h3" content="Links" />
                             <List link inverted>
-                                <List.Item as="a">Sitemap</List.Item>
-                                <List.Item as="a">Contact Us</List.Item>
                                 <List.Item as="a">
-                                    Religious Ceremonies
+                                    <Link className="Home" to="/">
+                                        Home
+                                    </Link>
                                 </List.Item>
                                 <List.Item as="a">
-                                    Gazebo Plans
+                                    <Link className="about" to="/about">
+                                        About
+                                    </Link>
+                                </List.Item>
+                                <List.Item as="a">
+                                    <Link className="contact" to="/contact">
+                                        Contact
+                                    </Link>
                                 </List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header
-                                inverted
-                                as="h4"
-                                content="Services"
-                            />
+                            <Header inverted as="h3" content="Social" />
                             <List link inverted>
-                                <List.Item as="a">
-                                    Banana Pre-Order
-                                </List.Item>
-                                <List.Item as="a">DNA FAQ</List.Item>
-                                <List.Item as="a">
-                                    How To Access
-                                </List.Item>
-                                <List.Item as="a">
-                                    Favorite X-Men
-                                </List.Item>
+                                <List.Item icon="github" content={<a href="https://github.com/clintlosee">GitHub</a>} />
+                                <List.Item
+                                    icon="linkedin"
+                                    content={<a href="https://www.linkedin.com/pub/clint-losee/46/585/a20">Linkedin</a>}
+                                />
+                                <List.Item
+                                    icon="facebook"
+                                    content={<a href="https://facebook.com/clint.losee">Facebook</a>}
+                                />
+                                <List.Item
+                                    icon="instagram"
+                                    content={<a href="https://instagram.com/clintlosee">Instagram</a>}
+                                />
+                                <List.Item
+                                    icon="twitter"
+                                    content={<a href="https://twitter.com/clintlosee">Twitter</a>}
+                                />
                             </List>
                         </Grid.Column>
-                        <Grid.Column width={7}>
-                            <Header as="h4" inverted>
-                                Footer Header
+                        <Grid.Column width={8}>
+                            <Header as="h3" inverted>
+                                Let&#39;s Connect
                             </Header>
-                            <p>
-                                Extra space for a call to action inside
-                                the footer that could help re-engage
-                                users.
-                            </p>
+                            <p>Don&#39;t hesitate to reach out to me. I&#39;d love to chat with you.</p>
+                            <Link className="contact" to="/contact">
+                                Contact Me
+                            </Link>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row>
+                        <Grid.Column width={16}>
+                            <Segment mini inverted textAlign="center">
+                                <Divider fitted />
+                                <Divider horizontal inverted>
+                                    Built with Gatsby
+                                </Divider>
+                            </Segment>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
