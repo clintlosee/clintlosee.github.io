@@ -115,7 +115,7 @@ class IndexPage extends Component {
                             inverted
                             size="huge"
                             as="a"
-                            href="https://drive.google.com/open?id=1aGO_CW8-jZfEfkSNnMxA179d_EAr4_FR"
+                            href="https://drive.google.com/open?id=1Y9LpmYBXbyJdRx8fm3H5nS2p3sdA_45L"
                             target="_blank"
                         >
                             <Icon name="download" /> Resume
