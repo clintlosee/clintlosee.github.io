@@ -29,6 +29,12 @@ export default class ContactPage extends Component {
                     Send Me A Message
                 </Divider>
 
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <textarea name="message" />
+                </form>
+
                 <Segment raised padded color="orange" style={styles.formStyle}>
                     <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact" />
