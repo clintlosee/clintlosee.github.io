@@ -28,7 +28,7 @@ export default [
         tech: 'React, React Native',
         description: 'RC Willey mobile app published on iOS and Android.',
         image: '/static/assets/images/portfolio/reactnative-rcw-folio.jpg',
-        link: 'page-2',
+        link: '/',
         target: '_blank'
     },
     {
