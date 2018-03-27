@@ -1,15 +1,15 @@
 {
-  "name": "gatsby-portfolio-site",
-  "description": "Clint Losee Gatsby Portfolio",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "Clint Losee <clint.losee@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.8.12",
-    "gatsby-link": "^1.6.8",
-    "gatsby-plugin-react-helmet": "^1.0.3",
-    "gatsby-plugin-sass": "^1.0.9",
+    "gatsby": "^1.9.73",
+    "gatsby-link": "^1.6.22",
+    "gatsby-plugin-google-fonts": "^0.0.3",
+    "gatsby-plugin-react-helmet": "^1.0.8",
     "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.72.0"
+    "semantic-ui-react": "^0.75.1"
   },
   "keywords": [
     "gatsby"
@@ -23,6 +23,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.5.2"
+    "prettier": "^1.7.4"
   }
 }

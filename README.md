@@ -1,3 +1,3 @@
-#Clint Losee Web Portfolio
+# Clint Losee Web Portfolio
 
-[http://clintlosee.github.io] (http://clintlosee.github.io)
+[Clint Losee Portfolio Site](http://clintlosee.github.io)
