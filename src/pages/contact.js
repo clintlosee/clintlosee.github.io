@@ -12,7 +12,7 @@ const styles = {
         marginBottom: 40
     },
     formStyle: {
-        marginBottom: 20,
+        marginBottom: 20
     },
     textAreaStyle: {
         width: '100%',
@@ -30,10 +30,10 @@ const styles = {
         transition: 'color .1s ease,border-color .1s ease',
         fontSize: '1em',
         lineHeight: 1.2857,
-        resize: 'vertical',
+        resize: 'vertical'
     },
     inputStyle: {
-        padding: '.3em 0 1em',
+        padding: '.3em 0 1em'
     },
     buttonStyle: {
         marginTop: '1em'
@@ -47,28 +47,32 @@ function encode(data) {
 }
 
 export default class ContactPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value });
-    };
+    state = { success: false };
+    handleChange = (e, { value }) => this.setState({ value });
+    handleSubmit = () => this.setState({ success: true });
 
-    handleSubmit = e => {
-        fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({ 'form-name': 'contact', ...this.state })
-        })
-            .then(() => {
-                alert('Success! Thank you for contacting me.');
-                this.setState({});
-            })
-            .catch(() => alert(error));
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {};
+    // }
+    // handleChange = e => {
+    //     this.setState({ [e.target.name]: e.target.value });
+    // };
 
-        e.preventDefault();
-    };
+    // handleSubmit = e => {
+    //     fetch('/', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //         body: encode({ 'form-name': 'contact', ...this.state })
+    //     })
+    //         .then(() => {
+    //             alert('Success! Thank you for contacting me.');
+    //             this.setState({});
+    //         })
+    //         .catch(() => alert(error));
+
+    //     e.preventDefault();
+    // };
 
     render() {
         return (
@@ -78,114 +82,6 @@ export default class ContactPage extends Component {
                         <Header size="huge">Contact Me</Header>
                         Send Me A Message
                     </Divider>
-
-                    <Segment raised padded color="orange" style={styles.formStyle}>
-                        <form
-                            name="contact"
-                            method="post"
-                            data-netlify="true"
-                            data-netlify-honeypot="bot-field"
-                            onSubmit={this.handleSubmit}
-                        >
-                            <p hidden>
-                                <label>
-                                    Don’t fill this out: <input name="bot-field" />
-                                </label>
-                            </p>
-                            {
-                            // <p>
-                            //     <label>
-                            //         Your name:<br />
-                            //         <input type="text" name="name" onChange={this.handleChange} />
-                            //     </label>
-                            // </p>
-                            // <p>
-                            //     <label>
-                            //         Your email:<br />
-                            //         <input type="email" name="email" onChange={this.handleChange} />
-                            //     </label>
-                            // </p>
-                            // <p>
-                            //     <label>
-                            //         Message:<br />
-                            //         <textarea name="message" onChange={this.handleChange} />
-                            //     </label>
-                            // </p>
-                            // <p>
-                            //     <button type="submit">Send</button>
-                            // </p>
-                            }
-                            <Form.Group>
-                                <Form.Input
-                                    size="large"
-                                    type="text"
-                                    name="name"
-                                    fluid
-                                    label="Name"
-                                    placeholder="What's your name?"
-                                    style={styles.inputStyle}
-                                />
-                                <Form.Input
-                                    size="large"
-                                    type="text"
-                                    name="email"
-                                    fluid
-                                    label="Email"
-                                    placeholder="email@gmail.com"
-                                    style={styles.inputStyle}
-                                />
-                            </Form.Group>
-                            <Form.TextArea
-                                size="large"
-                                type="text"
-                                fluid
-                                name="message"
-                                label="Message"
-                                placeholder="What can I help you with?"
-                                style={styles.textAreaStyle}
-                            />
-                            <Form.Button type="submit" content="Submit Netlify2" style={styles.buttonStyle} />
-                        </form>
-                    </Segment>
-                </Container>
-
-                <Container style={styles.container}>
-                    <Divider horizontal style={styles.message}>
-                        <Header size="huge">Contact Me</Header>
-                        Send Me A Message
-                    </Divider>
-
-                    <Segment raised padded color="orange" style={styles.formStyle}>
-                        <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
-                            <input type="hidden" name="form-name" value="contact" />
-                            <Form.Group widths="equal">
-                                <Form.Input
-                                    size="large"
-                                    type="text"
-                                    name="name"
-                                    fluid
-                                    label="Name"
-                                    placeholder="What's your name?"
-                                />
-                                <Form.Input
-                                    size="large"
-                                    type="text"
-                                    name="email"
-                                    fluid
-                                    label="Email"
-                                    placeholder="email@gmail.com"
-                                />
-                            </Form.Group>
-                            <Form.TextArea
-                                size="large"
-                                type="text"
-                                name="message"
-                                label="Message"
-                                placeholder="What can I help you with?"
-                            />
-                            <Form.Button type="submit" content="Submit Netlify" />
-                        </Form>
-                    </Segment>
 
                     <Segment raised padded color="orange" style={styles.formStyle}>
                         <Form
@@ -223,6 +119,51 @@ export default class ContactPage extends Component {
                         </Form>
                     </Segment>
                 </Container>
+
+                {
+                    // <Container style={styles.container}>
+                    //     <Divider horizontal style={styles.message}>
+                    //         <Header size="huge">Contact Me</Header>
+                    //         Send Me A Message
+                    //     </Divider>
+                    //     <Segment raised padded color="orange" style={styles.formStyle}>
+                    //         <form
+                    //             name="contact"
+                    //             method="post"
+                    //             data-netlify="true"
+                    //             data-netlify-honeypot="bot-field"
+                    //             onSubmit={this.handleSubmit}
+                    //         >
+                    //             <p hidden>
+                    //                 <label>
+                    //                     Don’t fill this out: <input name="bot-field" />
+                    //                 </label>
+                    //             </p>
+                    //             <p>
+                    //                 <label>
+                    //                     Your name:<br />
+                    //                     <input type="text" name="name" onChange={this.handleChange} />
+                    //                 </label>
+                    //             </p>
+                    //             <p>
+                    //                 <label>
+                    //                     Your email:<br />
+                    //                     <input type="email" name="email" onChange={this.handleChange} />
+                    //                 </label>
+                    //             </p>
+                    //             <p>
+                    //                 <label>
+                    //                     Message:<br />
+                    //                     <textarea name="message" onChange={this.handleChange} />
+                    //                 </label>
+                    //             </p>
+                    //             <p>
+                    //                 <button type="submit">Send</button>
+                    //             </p>
+                    //         </form>
+                    //     </Segment>
+                    // </Container>
+                }
             </div>
         );
     }
