@@ -27,7 +27,7 @@ export default class ContactPage extends Component {
         super(props);
         this.state = {};
     }
-    handleChange = () => {
+    handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
     };
 
@@ -52,7 +52,7 @@ export default class ContactPage extends Component {
                     method="post"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
-                    // onSubmit={this.handleSubmit}
+                    onSubmit={this.handleSubmit}
                 >
                     <p hidden>
                         <label>
