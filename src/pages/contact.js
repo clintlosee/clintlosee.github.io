@@ -37,7 +37,10 @@ export default class ContactPage extends Component {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({ 'form-name': 'contact', ...this.state })
         })
-            .then(() => alert('Success!'))
+            .then(() => {
+                alert('Success! Thank you for contacting me.');
+                this.setState({});
+            })
             .catch(() => alert(error));
 
         e.preventDefault();
