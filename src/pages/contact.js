@@ -31,7 +31,7 @@ export default class ContactPage extends Component {
         this.setState({ [e.target.name]: e.target.value });
     };
 
-    handleSubmit = e => {
+    handleSubmit = (e) => {
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -50,10 +50,9 @@ export default class ContactPage extends Component {
                 <form
                     name="contact"
                     method="post"
-                    action="/thanks/"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
-                    onSubmit={this.handleSubmit}
+                    // onSubmit={this.handleSubmit}
                 >
                     <p hidden>
                         <label>
